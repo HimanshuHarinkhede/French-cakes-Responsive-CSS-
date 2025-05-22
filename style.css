@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Times New Roman', Times, serif;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #f6fafd 0%, #e0f7fa 100%);
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.nav {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #31aeae;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    width: 100%;
+    background: linear-gradient(90deg, #e0f7fa 0%, #b2ebf2 100%);
+    box-shadow: 0 2px 12px rgba(49, 174, 174, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav img {
+    height: 48px;
+    padding-left: 24px;
+    padding-top: 8px;
+    transition: transform 0.2s;
+}
+.nav img:hover {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+.nav navbar {
+    display: flex;
+    font-size: 2.2rem;
+    gap: 48px;
+    padding-left: 0;
+}
+.nav navbar a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.nav navbar a:hover {
+    background: #b2ebf2;
+    color: #FF2149;
+}
+
+.nav .sign {
+    padding-right: 40px;
+}
+.nav .sign .btn-signin {
+    background: linear-gradient(90deg, #FF2149 60%, #ff6f91 100%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(255,33,73,0.13);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    letter-spacing: 1px;
+}
+.nav .sign .btn-signin:hover, .nav .sign .btn-signin:focus {
+    background: linear-gradient(90deg, #ff6f91 0%, #FF2149 100%);
+    box-shadow: 0 4px 18px rgba(255,33,73,0.18);
+    transform: translateY(-2px) scale(1.04);
+    outline: none;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
+    width: 100%;
+    background: linear-gradient(120deg, #31aeae 60%, #b2ebf2 100%);
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 6px 24px rgba(49, 174, 174, 0.13);
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    padding-top: 32px;
+    padding-bottom: 18px;
+    color: #FF2149;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(255,33,73,0.09);
+    transition: color 0.2s;
+}
+.header h2 {
+    font-size: 2.2rem;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    color: #1976d2;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 6px rgba(25,118,210,0.07);
+}
+
+.cake {
+    color: #FF2149;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 6px rgba(255,33,73,0.08);
+}
+
+.btn {
+    padding-top: 12px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn1 {
+    background: linear-gradient(90deg, #FF2149 60%, #ff6f91 100%);
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 18px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 12px rgba(255,33,73,0.13);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.btn1:hover, .btn1:focus {
+    background: linear-gradient(90deg, #ff6f91 0%, #FF2149 100%);
+    box-shadow: 0 4px 18px rgba(255,33,73,0.18);
+    transform: translateY(-2px) scale(1.04);
+    outline: none;
+}
+
+.cakefooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    width: 100%;
+    background-image: linear-gradient(rgba(34,34,34,0.5), rgba(49,174,174,0.4)), url("cakes2.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 48px 32px 0 32px;
+    box-shadow: 0 4px 24px rgba(49,174,174,0.13);
+    border-top: 3px solid #FF2149;
+    border-radius: 32px 32px 0 0;
+    margin-top: 32px;
+    transition: background 0.3s;
+}
+.cakefooter p {
+    padding-top: 32px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(34,34,34,0.18);
+}
+
+@media (max-width: 900px) {
+    .nav navbar {
+        gap: 24px;
+        font-size: 1.3rem;
+    }
+    .header h1 {
+        font-size: 2.2rem;
+    }
+    .header h2 {
+        font-size: 1.3rem;
+    }
+    .cake {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+        min-height: unset;
+        box-shadow: 0 2px 8px rgba(49,174,174,0.08);
+    }
+    .nav img {
+        height: 36px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-bottom: 8px;
+    }
+    .nav navbar {
+        padding-left: 0;
+        font-size: 1.1rem;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .nav .sign {
+        padding-right: 0;
+        margin-top: 8px;
+        width: 100%;
+        text-align: right;
+    }
+    .nav .sign .btn-signin {
+        width: 90%;
+        font-size: 1rem;
+        padding: 8px 0;
+        margin-top: 6px;
+    }
+    .header {
+        padding: 18px 8px;
+        border-radius: 0 0 18px 18px;
+        min-height: 180px;
+    }
+    .header h1 {
+        font-size: 1.3rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        letter-spacing: 1px;
+    }
+    .header h2 {
+        font-size: 1rem;
+        padding-top: 4px;
+        padding-bottom: 12px;
+    }
+    .cake {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    .btn {
+        padding-top: 6px;
+        padding-bottom: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn1 {
+        font-size: 1rem;
+        padding: 10px 0;
+        width: 90%;
+        border-radius: 8px;
+    }
+    .cakefooter {
+        min-height: 120px;
+        padding: 16px 6px 0 6px;
+        font-size: 0.9rem;
+        background-position: right;
+        border-radius: 18px 18px 0 0;
+        margin-top: 18px;
+    }
+    .cakefooter p {
+        padding-top: 12px;
+        font-size: 1rem;
+    }
+    body {
+        background: #f6fafd;
+    }
+}
